@@ -1,39 +1,22 @@
-<ion-header>
-
-  <ion-navbar>
-    <ion-title>{{ 'LOGIN_TITLE' | translate }}</ion-title>
-  </ion-navbar>
-
-</ion-header>
-
-
-<ion-content>
-  <form (submit)="doLogin()">
-    <ion-list>
-
-      <ion-item>
-        <ion-label fixed>{{ 'EMAIL' | translate }}</ion-label>
-        <ion-input type="email" [(ngModel)]="account.email" name="email"></ion-input>
-      </ion-item>
-
-      <!--
-      Want to use a Username instead of an Email? Here you go:
-
-      <ion-item>
-        <ion-label floating>{{ 'USERNAME' | translate }}</ion-label>
-        <ion-input type="text" [(ngModel)]="account.username" name="username"></ion-input>
-      </ion-item>
-      -->
-
-      <ion-item>
-        <ion-label fixed>{{ 'PASSWORD' | translate }}</ion-label>
-        <ion-input type="password" [(ngModel)]="account.password" name="password"></ion-input>
-      </ion-item>
-
+<ion-content padding class="login-content">
+  <div class="center">
+    <div class="splash-logo"></div>
+    <ion-list class="button-list">
       <div padding>
-        <button ion-button color="primary" block>{{ 'LOGIN_BUTTON' | translate }}</button>
+        <button class="button" color="light" (click)='loginGoogle()'>
+          <ion-icon name="logo-googleplus"></ion-icon>
+          Login with Google</button>
       </div>
-
+      <div padding >
+        <button class="button" color="light"(click)='logoutGoogle()'>
+          <ion-icon name="logo-facebook"></ion-icon>
+          Login with Facebook</button>
+      </div>
+      <div padding>
+        <button class="button" color="light">
+          <ion-icon name="logo-twitter"></ion-icon>
+          Login with Twitter</button>
+      </div>
     </ion-list>
-  </form>
+  </div>
 </ion-content>

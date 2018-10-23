@@ -1,2 +1,50 @@
+
+
 page-login {
+
+  $CONTENT_TOP: #3050FF;
+  $CONTENT_BOTTOM: #40FF90;
+  $CONTENT_TRANSPARENCY: rgba(255,255,255,0.4);
+
+
+  .login-content{
+    //background-color: map-get($colors, primary);
+    background: -webkit-gradient(left top, $CONTENT_TOP, $CONTENT_BOTTOM);
+    background: -o-linear-gradient(bottom right, $CONTENT_TOP, $CONTENT_BOTTOM);
+    background: -moz-linear-gradient(bottom right, $CONTENT_TOP, $CONTENT_BOTTOM);
+    background: linear-gradient(to bottom right, $CONTENT_TOP, $CONTENT_BOTTOM);
+  }
+
+  .center{
+    height:100%;
+    flex-direction: column;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .center div{
+    //width: 40%
+  }
+  .splash-logo {
+    margin: 10px;
+    background: url('../assets/img/fox.png') transparent;
+    background-size: 100%;
+    width: 128px;
+    height: 128px;
+  }
+
+  .button-list{
+    margin:10px;
+  }
+  .button{
+    background-color: transparent;
+    border-radius: 32px;
+    border: 1px solid white;
+    width: 100%;
+    padding: 15px;
+    color: white;
+
+  }
+
 }

@@ -26,8 +26,23 @@ import { Api } from '../api/api';
 @Injectable()
 export class User {
   _user: any;
+  email: string;
+  id: string;
+  imageUrl: string;
+  firstName: string;
+  lastName: string;
+  token: string;
+  defaultImageUrl: string;
 
-  constructor(public api: Api) { }
+  constructor(public api: Api) {
+    this.email = 'test@example.com';
+    this.id = 'test';
+    this.imageUrl = '../assets/img/fox.png';
+    this.firstName = 'Username';
+    this.lastName = '';
+    this.token = '';
+    this.defaultImageUrl = '';
+   }
 
   /**
    * Send a POST request to our login endpoint with the data

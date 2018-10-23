@@ -1,0 +1,21 @@
+<ion-menu type="reveal" [content]="content">
+  <ion-header>
+    <ion-toolbar style="margin:auto;">
+      <ion-avatar>
+      <img [src]='user.imageUrl'/>
+      </ion-avatar>
+      <ion-title>Hello, {{user.firstName}}</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content style="overflow-y: auto;">
+    <ion-list>
+      <button padding menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+        {{p.title}}
+      </button>
+    </ion-list>
+  </ion-content>
+  <ion-footer padding>
+      Footer
+  </ion-footer>
+</ion-menu>
+<ion-nav #content [root]="rootPage"></ion-nav>`

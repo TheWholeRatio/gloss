@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "842226328889",
+    "firebase_url": "https://gloss-ff12b.firebaseio.com",
+    "project_id": "gloss-ff12b",
+    "storage_bucket": "gloss-ff12b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:842226328889:android:67f6f2a0cad05501",
+        "android_client_info": {
+          "package_name": "com.thewholeratio.gloss"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "842226328889-j3b11d9diih3loqh54v56r1bho2vdr5u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.thewholeratio.gloss",
+            "certificate_hash": "5ed4818cd038c94beb2fa3dbf79b3b3a1c3a2344"
+          }
+        },
+        {
+          "client_id": "842226328889-8norh1jltjp13097b79i1n9lfpjdoh4c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmG3sRvYzys59OjZAPUwJUZy8ldI1OGEQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "842226328889-8norh1jltjp13097b79i1n9lfpjdoh4c.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "842226328889-a2i20cfl8atu55idtmbrd52vq49ubb8v.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.thewholeratio.gloss"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

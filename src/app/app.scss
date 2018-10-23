@@ -14,3 +14,20 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+// $toolbar-background
+// $toolbar-border-color
+// $toolbar-text-color
+// $toolbar-active-color
+// $toolbar-inactive-color
+
+  $CONTENT_TOP: #3050FF;
+  $CONTENT_BOTTOM: #40FF90;
+  $CONTENT_TRANSPARENCY: rgba(255,255,255,0.4);
+
+  .toolbar-background{
+    //background-color: map-get($colors, primary);
+    background: -webkit-gradient(left top, $CONTENT_TOP, $CONTENT_BOTTOM);
+    background: -o-linear-gradient(bottom right, $CONTENT_TOP, $CONTENT_BOTTOM);
+    background: -moz-linear-gradient(bottom right, $CONTENT_TOP, $CONTENT_BOTTOM);
+    background: linear-gradient(to bottom right, $CONTENT_TOP, $CONTENT_BOTTOM);
+  }
